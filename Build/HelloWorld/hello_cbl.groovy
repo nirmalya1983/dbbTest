@@ -1,8 +1,8 @@
 import com.ibm.dbb.build.*
 
 // Change the following variables to match your system
-hlq        = "USER.BUILD"
-sourceDir  = "/u/user/build"
+hlq        = "ADMUSR1.NIRMALYA"
+sourceDir  = "/u/ibmdbg/nirmalya/jenkins/workspace/SamplePipeline1/Build/HelloWorld"
 compilerDS = "IGY.V6R1M0.SIGYCOMP"
 
 println("Creating ${hlq}.COBOL. . .")
