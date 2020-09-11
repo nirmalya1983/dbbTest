@@ -42,6 +42,7 @@ import groovy.time.*
 println("java.version="+System.getProperty("java.runtime.version"))
 println("java.home="+System.getProperty("java.home"))
 println("user.dir="+System.getProperty("user.dir"))
+System.properties."PATH" = "/var/rocket/bin:/usr/lpp/java/J8.0_64/bin:/bin:."
  
 // load the Tools.groovy utility script
 def tools = loadScript(new File("Tools.groovy"))
