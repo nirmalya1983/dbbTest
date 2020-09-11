@@ -119,8 +119,8 @@ if (!incremental) {
 	if (!properties.userBuild && buildList.size() > 0) { 
 		// create collection if needed
 		def repositoryClient = tools.getDefaultRepositoryClient()
-		if (!repositoryClient.collectionExists(properties.collection))
-			repositoryClient.createCollection(properties.collection) 
+		//if (!repositoryClient.collectionExists(properties.collection))
+		//	repositoryClient.createCollection(properties.collection) 
 			
 		println("** Scan the build list to collect dependency data")
 		def scanner = new DependencyScanner()
@@ -138,15 +138,15 @@ if (!incremental) {
 			
 			if (logicalFiles.size() == 500) {
 				println("** Storing ${logicalFiles.size()} logical files in repository collection '$properties.collection'")
-				repositoryClient.saveLogicalFiles(properties.collection, logicalFiles);
-				println(repositoryClient.getLastStatus())  
+				//repositoryClient.saveLogicalFiles(properties.collection, logicalFiles);
+				//println(repositoryClient.getLastStatus())  
 				logicalFiles.clear() 		
 			}
 		}
 
 		println("** Storing remaining ${logicalFiles.size()} logical files in repository collection '$properties.collection'")
 		repositoryClient.saveLogicalFiles(properties.collection, logicalFiles);
-		println(repositoryClient.getLastStatus())
+		//println(repositoryClient.getLastStatus())
 	}
 }
 
