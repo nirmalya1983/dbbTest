@@ -64,7 +64,7 @@ properties.startTime = startTime.format("yyyyMMdd.hhmmss.mmm")
 println("** Build start at $properties.startTime")
 
 // initialize build artifacts
-tools.initializeBuildArtifacts()
+//tools.initializeBuildArtifacts() Nirmalya
 
 // create workdir (if necessary)
 new File(properties.workDir).mkdirs()
