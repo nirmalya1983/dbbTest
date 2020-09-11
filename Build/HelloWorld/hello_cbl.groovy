@@ -3,7 +3,7 @@ import com.ibm.dbb.build.*
 // Change the following variables to match your system
 hlq        = "ADMUSR1.NIRMALYA"
 sourceDir  = "/u/ibmdbg/nirmalya/jenkins/workspace/SamplePipeline1/Build/HelloWorld"
-compilerDS = "IGY.V6R1M0.SIGYCOMP"
+compilerDS = "IGY620.SIGYCOMP"
 
 println("Creating ${hlq}.COBOL. . .")
 CreatePDS createPDSCmd = new CreatePDS();
