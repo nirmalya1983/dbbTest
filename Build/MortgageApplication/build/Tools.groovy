@@ -338,7 +338,7 @@ def finalizeBuildResult(Map args) {
 def getCurrentGitHash() {
 	def properties = BuildProperties.getInstance()
 		
-	def cmd = "export export PATH=/var/rocket/bin:/usr/lpp/java/J8.0_64/bin:$PATH; git -C ${properties.sourceDir} rev-parse HEAD"
+	def cmd = "/var/rocket/bin/git -C ${properties.sourceDir} rev-parse HEAD"
 	def git_hash = new StringBuffer()
 	def git_error = new StringBuffer()
 	
