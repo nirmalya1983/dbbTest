@@ -51,7 +51,7 @@ def loadProperties(OptionAccessor opts) {
 	if (opts.t) properties.team = opts.t
 	if (opts.e) properties.logEncoding = opts.e
 	if (opts.E) properties.errPrefix = opts.E
-	if (opts.u) properties.userBuild = "false"
+	if (opts.u) properties.userBuild = "true"
 	
 	// override new default properties
 	if (opts.r) properties.'dbb.RepositoryClient.url' = opts.r
